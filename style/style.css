@@ -1,0 +1,238 @@
+@import "https://fonts.googleapis.com/css?family=Aclonica"; 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #ee5a3d;
+    color:white;
+    font-family: 'Aclonica';
+    font-size: 13px;
+    
+}
+
+li{
+    list-style: none;
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+}
+a:hover{
+    font-size: 20px;
+}
+header{
+    position: fixed;
+    min-height: 90px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #f70000;*/
+    background-color: pink;
+    width:100%;
+    border: 4px solid rgb(214, 75, 75);
+    border-radius: 10px;
+    
+}
+nav{
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+}
+@media(max-width: 650px)
+{
+    nav{
+    margin-top: 10px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    }
+    nav li{
+        padding-bottom: 5px;
+    }
+}
+#nav-bar > ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#header-img > a >img{
+    width: 50%;
+    height: 50%;
+    max-width: 300px;
+    font-display: flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 4px solid rgb(214, 75, 75);
+}
+#header-img > a >img:hover{
+box-shadow: 4px 6px  rgb(179, 64, 64);
+}
+@media (max-width:650px){
+    #header-img > img{
+        margin-top:15px;
+        width: 100px;
+        position:relative;
+    }
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+   padding-top: 250px;
+   margin-bottom: 60px;
+   
+    
+}
+#principal > h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    word-wrap: break-word;
+    font-size: 40px;
+}
+
+#email{
+    width: 250px;
+    height: 30px;
+    margin: 15px 1px;
+    border-radius: 5px;
+    font-family: inherit;
+    text-align: center;
+    cursor: initial;
+    padding: 8px;
+}
+#email:hover{
+    border: 1px solid black;
+    box-shadow: 4px 6px  rgb(179, 64, 64);
+    font-size: 15px;
+}
+#submit{
+    
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(214, 75, 75);
+    color:white;
+    font-family: inherit;
+    cursor: pointer;  
+    font-size: 18px;
+    flex:1 1 auto;
+    align-self: center;
+}
+#submit:hover{
+   font-size: 20px;
+    box-shadow: 4px 6px  rgb(179, 64, 64);
+}
+
+#servicio{
+     padding-top: 10px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color:black
+}
+.secciones{
+    margin:10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 20px;
+   
+}
+#detalle{
+    padding-top: 120px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#detalle > iframe{
+    max-width: 560px;
+    width:100%;
+}
+
+#precios{
+    background-color: #f56f54;
+    margin-top:60px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-bottom: 30px;
+}
+button{
+    font-family: inherit;
+    background-color: rgb(214, 75, 75);
+    color:white;
+    margin:5px;
+    border-radius: 10px;
+    width: 105px;
+    height: 25px;
+}
+button:hover{
+    font-size: 15px;
+    box-shadow: 4px 6px  rgb(179, 64, 64);
+}
+
+.producto{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:calc(100% / 3);
+    margin:10px;
+    border:3px solid pink;
+    border-radius:5px;
+  }
+  .producto h2{
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+  .producto p{
+    margin:5px 20px;
+    padding:10px;
+  }
+  @media(max-width:800px){
+    #precios{
+      flex-direction:column;
+    }
+    .producto{
+      max-width:300px;
+      width:100%;
+      margin: 0 auto;
+      margin-bottom:10px;
+    }
+  }
+  footer{
+    margin-top: 30px;
+    background-color:#C64A4A;
+    padding:20px;
+    text-align:right;
+  }
+  
+  footer > span{
+    margin-top: 5px;
+    display:flex;
+    justify-content: flex-end;
+    font-size:0.9em;
+    
+  }
